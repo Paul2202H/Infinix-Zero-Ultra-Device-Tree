@@ -1,5 +1,4 @@
 import /tee.rc
-import /trustonic.rc
 import /init.custom.rc
 
 on init
@@ -16,7 +15,7 @@ on early-fs
     start vold
 
 on late-fs
-    mount_all /first_stage_ramdisk/fstab.mt6833 --late
+    mount_all /first_stage_ramdisk/fstab.mt6877 --late
 
 on post-fs
     start boot-hal-1-2
